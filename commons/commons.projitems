@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{01A6CB3C-1A65-47DA-83C1-B6DB15D7B535}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>commons</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Camera\CameraHeadbobAnimation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Camera\CameraMouseLook.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Camera\CameraMouseOrbit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Camera\CameraZoom.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Camera\CharacterCameraSwitcher.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Component\FPSDisplay.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Component\TextPanel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\Behaviours.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\CollectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\Console.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\GameObjects.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\GUI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\Input.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\Layer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\ObjectElement.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\Rigidbody.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Commons\Util\Vector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Commons\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Commons\Component\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Commons\Util\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Commons\Camera\" />
+  </ItemGroup>
+</Project>
